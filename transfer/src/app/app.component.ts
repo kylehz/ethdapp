@@ -7,7 +7,7 @@ import { EthcontractService } from './ethcontract.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'your first DApp in Angular';
+  title = '';
   accounts:any;
   transferFrom = '0x0';
   balance ='0 ETH';
