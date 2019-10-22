@@ -11,7 +11,9 @@ export class AppComponent {
   accounts:any;
   transferFrom = '0x0';
   balance ='0 ETH';
-  transferTo='';
+  transferTo1='';
+  transferTo2='';
+  transferTo3='';
   amount=0;
   remarks='';
 
@@ -33,10 +35,12 @@ export class AppComponent {
 
   transferEther(event){
     let that = this;
-console.log(this.transferTo);
+console.log(this.transferTo1, this.transferTo2, this.transferTo3);
     this.ethcontractService.transferEther(
       this.transferFrom,
-      this.transferTo,
+      this.transferTo1,
+      this.transferTo2,
+      this.transferTo3,
       this.amount,
       this.remarks
     ).then(function(){

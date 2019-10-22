@@ -45,7 +45,9 @@ export class EthcontractService {
 
   transferEther(
     _transferFrom,
-    _transferTo,
+    _transferTo1,
+    _transferTo2,
+    _transferTo3,
     _amount,
     _remarks
   ) {
@@ -57,7 +59,9 @@ export class EthcontractService {
 
       paymentContract.deployed().then(function(instance) {
           return instance.transferFund(
-            _transferTo,
+            _transferTo1,
+            _transferTo2,
+            _transferTo3,
             {
               from:_transferFrom,
               value:window.web3.toWei(_amount, "ether")
