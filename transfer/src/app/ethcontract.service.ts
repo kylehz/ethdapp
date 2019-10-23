@@ -19,6 +19,7 @@ export class EthcontractService {
   constructor() {
     if (typeof window.web3 !== 'undefined') {
       this.web3Provider = window.web3.currentProvider;
+      window.ethereum.enable();
     } else {
       this.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
     }
