@@ -2765,6 +2765,46 @@
     "version": "0.4.25+commit.59dbf8f1.Emscripten.clang"
   },
   "networks": {
+    "1": {
+      "events": {
+        "0x6ab65ca404c3c592c233090339d563cd5868ebabdc4fbfbe624ca897df568935": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "_transferTo1",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_transferTo2",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_transferTo3",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "_transferFrom",
+              "type": "address"
+            },
+            {
+              "indexed": false,
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "TransferFund",
+          "type": "event",
+          "signature": "0x6ab65ca404c3c592c233090339d563cd5868ebabdc4fbfbe624ca897df568935"
+        }
+      },
+      "links": {},
+      "address": "0x1f5482649c3BbD855e67Dc4bA0a789660a6339A7",
+      "transactionHash": "0x269b14189772d02a55d55d53a57c9290935a9a0a307a7fbc1b324c47d5838fb9"
+    },
     "3": {
       "events": {
         "0x6ab65ca404c3c592c233090339d563cd5868ebabdc4fbfbe624ca897df568935": {
@@ -2847,7 +2887,7 @@
     }
   },
   "schemaVersion": "3.0.16",
-  "updatedAt": "2019-10-23T08:10:59.888Z",
+  "updatedAt": "2019-10-28T07:36:34.484Z",
   "devdoc": {
     "methods": {}
   },
